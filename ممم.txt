@@ -1,0 +1,3 @@
+pr([]) :- !, write('1'). pr([H]) :- !, write(H).
+ pr([H|[T]]) :- !, write(H), write('*'), write(T).
+ pr([H|T]) :- pr(T), write('*'), write(H).
